@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#2B2B2B" id="themeColor">
+<title>NeiValHein's Portfolio</title>
+<style type="text/css">@media (prefers-color-scheme:light){:root{--color-primary:#f5f5f5;--color-secondary:#FFFFFF;--color-accent:#844700;--color-font:#000000;--color-button:#fe8b04;--color-button-hover:#f56811;}}@media (prefers-color-scheme:dark){:root{--color-primary:#2F2F2F;--color-secondary:#2B2B2B;--color-accent:#a0b5ff;--color-font:#ffffff;--color-button:#3655A5;--color-button-hover:#345AE8;}}</style>
+<link href="css/style.css" rel="stylesheet" media="all">
+<script src="js/theme-controller.js"></script>
+<link rel="icon" type="image/svg+xml" href="img/favicon/logo.svg">
+<link rel="alternate icon" href="img/favicon/favicon.ico">
+<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+<link rel="manifest" href="manifest.json">
+
+<!-- <script src="/js/script.js" defer></script>
+ -->
+</head>
+<body>
+<nav class="navbar navbar-expand fixed-top bg">
+  <div class="container">
+    <a href="#" class="brandlogo" aria-label="Home"></a>
+    <div class="menu-container">
+      <label for="checkmenu"></label>
+      <input type="checkbox" class="toggler" id="checkmenu" title="Display sidebar menu" aria-label="sidebar menu" accesskey="m">
+      <div class="hamburger">
+        <div></div>
+      </div>
+      <div class="menu">
+        <div>
+          <div>
+            <ul>
+              <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#Web">Web</a></li>
+              <li class="nav-item"><a class="nav-link" href="#Games">Games</a></li>
+              <li class="nav-item"><a class="nav-link" href="#Addons">Addons</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="/inicio">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Web">Web</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Games">Games</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Addons">Addons</a></li>      
+      </ul>
+    </div>
+  </div>
+</nav>
+    <div class="container">
+      <div class="row">
+        <div class="column-a">
+<div class="card margin-top">
+            
+            <div class="card-body">
+              <a href="/post/<?= $view_post_syntax; ?>"><div class="img-zoom"><img class="card-img-top" src="img/blog/chrome.jpg" width="900" height="300" alt="Imagen del post" loading="lazy"></div><h2 class="card-title">Web Development</h2></a>
+              <p class="card-text">I currently have knowledge in the following web languages:
+				<ul class="list-unstyled">
+				<li class="decoration-link">HTML</li>
+				<li class="decoration-link">CSS</li>
+				<li class="decoration-link">JS</li>
+				<li class="decoration-link">PHP</li>
+				<li class="decoration-link">SQL</li>
+				<li class="decoration-link">JQUERY</li>
+				</ul>
+				</p>
+              <a href="/web" class="btn">Ver post completo &rarr;</a>
+            </div>
+          </div>
+      	</div>
+      </div>
+    </div>
+</body>
+</html>
