@@ -20,7 +20,6 @@ function toggleThemedark() {
 function toggleThemecustom() {
         setTheme('theme-custom');
         setThemecolor('#808080');
-        importTheme();
     }
 function toggleThemenord() {
         setTheme('theme-nord');
@@ -121,7 +120,6 @@ function startup() {
 
         accentcolor.select();
 
-        importTheme();
     }
 
 }
@@ -235,7 +233,6 @@ function resetcolors() {
     accentcolorupdate(event);
 
     savecolors();
-    importTheme();
 }
 
 function resetcolorsswitch() {
@@ -253,12 +250,6 @@ function resetcolorsswitch() {
     localStorage.removeItem('accentcolor');
 
     savecolors();
-    importTheme();
-}
-
-function importTheme() {
-    document.getElementById('import-theme').value = localStorage.getItem('fontcolor') + localStorage.getItem('primarycolor') + localStorage.getItem('secondarycolor') + localStorage.getItem('buttoncolor') + localStorage.getItem('buttonhovercolor') + localStorage.getItem('accentcolor');
-
 }
 
 (function() {
