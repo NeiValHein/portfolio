@@ -111,8 +111,8 @@ footer .p-small {
     font-size: 0.7rem;
 }
 .brandlogo {
-    -webkit-mask-image: url(img/logos/banner.svg);
-    mask-image: url(img/logos/banner.svg);
+    -webkit-mask-image: url(/img/logos/banner.svg);
+    mask-image: url(/img/logos/banner.svg);
     background-color: var(--color-button);
     -webkit-mask-size: 100% 100%;
     mask-size: 100% 100%;
@@ -1362,8 +1362,8 @@ list-centered {
 }
 @media (max-width: 300px) {
     .brandlogo {
-    -webkit-mask-image: url(img/logos/banner_WCT.svg) !important;
-    mask-image: url(img/logos/banner_WCT.svg) !important;
+    -webkit-mask-image: url(/img/logos/banner_WCT.svg) !important;
+    mask-image: url(/img/logos/banner_WCT.svg) !important;
     }
     .row {
     margin-left: -12px !important;
