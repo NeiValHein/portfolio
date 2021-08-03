@@ -1346,8 +1346,8 @@ list-centered {
 }
 .reply button {
 }
-#titleComment {
-    scroll-snap-margin-top: 5ex;
+#Web, #Games, #Addons{
+    scroll-margin-top: 8ex;
 }
 .img-fluid {
     max-width: 100%;
