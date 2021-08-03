@@ -1,14 +1,14 @@
 {
-  "name": "WebCodeTeam",
-  "short_name": "WCT",
-  "description": "Aplicación Web Progresiva de WCT.",
+  "name": "NeiValHein Portfolio",
+  "short_name": "PWA Nei",
+  "description": "Portfolio PWA.",
   "background_color": "#2B2B2B",
   "theme_color": "#2B2B2B",
   "orientation": "any",
   "display": "standalone",
-  "start_url": "/inicio",
+  "start_url": "/index.html",
   "scope": "./",
-  "lang": "es-CR",
+  "lang": "en-US",
   "icons": [
     {
       "src": "/img/pwa/pwa.svg",
