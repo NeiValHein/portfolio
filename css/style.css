@@ -111,8 +111,8 @@ footer .p-small {
     font-size: 0.7rem;
 }
 .brandlogo {
-    -webkit-mask-image: url(/portfolio/logos/banner.svg);
-    mask-image: url(/portfolio/logos/banner.svg);
+    -webkit-mask-image: url(/portfolio/img/logos/banner.svg);
+    mask-image: url(/portfolio/img/logos/banner.svg);
     background-color: var(--color-button);
     -webkit-mask-size: 100% 100%;
     mask-size: 100% 100%;
@@ -362,8 +362,8 @@ top: 0;
     height: 30px;
 }
 .logo {
-    -webkit-mask-image: url(/portfolio/logos/logo.svg);
-    mask-image: url(/portfolio/logos/logo.svg);
+    -webkit-mask-image: url(/portfolio/img/logos/logo.svg);
+    mask-image: url(/portfolio/img/logos/logo.svg);
     background-color: var(--color-button);
     -webkit-mask-size: 100% 100%;
     mask-size: 100% 100%;
@@ -371,8 +371,8 @@ top: 0;
     mask-repeat: no-repeat;   
 }
 .error {
-    -webkit-mask-image: url(/portfolio/logos/error.svg);
-    mask-image: url(/portfolio/logos/error.svg);
+    -webkit-mask-image: url(/portfolio/img/logos/error.svg);
+    mask-image: url(/portfolio/img/logos/error.svg);
     background-color: var(--color-button);
     -webkit-mask-size: 100% 100%;
     mask-size: 100% 100%;
@@ -380,8 +380,8 @@ top: 0;
     mask-repeat: no-repeat;   
 }
 .offline {
-    -webkit-mask-image: url(/portfolio/logos/offline.svg);
-    mask-image: url(/portfolio/logos/offline.svg);
+    -webkit-mask-image: url(/portfolio/img/logos/offline.svg);
+    mask-image: url(/portfolio/img/logos/offline.svg);
     background-color: var(--color-button);
     -webkit-mask-size: 100% 100%;
     mask-size: 100% 100%;
@@ -745,13 +745,13 @@ a:hover:not(.btn) {
     margin-bottom: -25px;
 }
 .facebook {
-    background-image: url("/portfolio/icon/facebook-outline.svg");
+    background-image: url("/portfolio/img/icon/facebook-outline.svg");
 }
 .twitter {
-    background-image: url("/portfolio/icon/twitter-outline.svg");
+    background-image: url("/portfolio/img/icon/twitter-outline.svg");
 }
 .instagram {
-    background-image: url("/portfolio/icon/instagram-outline.svg");
+    background-image: url("/portfolio/img/icon/instagram-outline.svg");
 }
 .social-icon:hover {
     background-color: var(--color-button-hover);
@@ -1362,8 +1362,8 @@ list-centered {
 }
 @media (max-width: 300px) {
     .brandlogo {
-    -webkit-mask-image: url(/portfolio/logos/banner_WCT.svg) !important;
-    mask-image: url(/portfolio/logos/banner_WCT.svg) !important;
+    -webkit-mask-image: url(/portfolio/img/logos/banner_WCT.svg) !important;
+    mask-image: url(/portfolio/img/logos/banner_WCT.svg) !important;
     }
     .row {
     margin-left: -12px !important;
