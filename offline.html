@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#2B2B2B" id="themeColor">
+<style type="text/css">@media (prefers-color-scheme:light){:root{--color-primary:#f5f5f5;--color-secondary:#FFFFFF;--color-accent:#844700;--color-font:#000000;--color-button:#fe8b04;--color-button-hover:#f56811;}}@media (prefers-color-scheme:dark){:root{--color-primary:#2F2F2F;--color-secondary:#2B2B2B;--color-accent:#a0b5ff;--color-font:#ffffff;--color-button:#3655A5;--color-button-hover:#345AE8;}}</style>
+<link href="/css/style.css" rel="stylesheet" media="all">
+<script src="/js/theme-controller.js"></script>
+<link rel="icon" type="image/svg+xml" href="/img/favicon/logo.svg">
+<link rel="alternate icon" href="/img/favicon/favicon.ico">
+<link rel="apple-touch-icon" href="/img/favicon/apple-touch-icon.png">
+<link rel="manifest" href="/../manifest.json">
+<script src="/js/script.js" defer></script>
+<title>Ups!</title>
+<meta http-equiv="X-UA-Compatible"content="IE=Edge">
+<meta name="description" content="Connection Error.">
+<meta name="author" content="NeiValHein">
+</head>
+<body>
+<div class="content-container text-center">
+<div class="offline-error" style="height: 300px;"></div>
+<div>Hey, you're currently offline &#10071;</div>
+<span class="brsmall"></span>
+<div class="conection-check" id="conection-check"><p>Current connection status: <span id="status"></span></p>
+<button class="btn refresh" onclick="refresh()">Reload</button></div>
+</div>
+<script type="text/javascript">
+var loaded = false;
+window.addEventListener('load', function() {
+  var status = document.getElementById("status");
+
+  function updateOnlineStatus(event) {
+    var condition = navigator.onLine ? "online" : "offline";
+
+    status.className = condition;
+    status.innerHTML = condition.toUpperCase();
+  }
+  window.addEventListener('online',  updateOnlineStatus);
+  window.addEventListener('offline', updateOnlineStatus);
+});
+function refresh(){
+    document.querySelector('.conection-check').innerHTML = 'Re-establishing connection please wait...' +'<div class="loader"></div>';
+    window.location.reload();
+} 
+</script>
+</body>
+</html>
